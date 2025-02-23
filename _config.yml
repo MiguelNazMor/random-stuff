@@ -1,0 +1,25 @@
+title: Random Stuff
+description: A blog about technology, travels, cooking, software development, and more
+author: Miguel Nazareno Moreno
+baseurl: "/random-stuff"
+url: "https://miguelnazmor.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Categories
+categories: [technology, travels, cooking, software]
+
+# Default front matter
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Miguel Nazareno Moreno"
