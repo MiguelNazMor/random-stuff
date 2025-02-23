@@ -1,6 +1,6 @@
 title: Random Stuff
 description: A blog about technology, travels, cooking, software development, and more
-author: Miguel Nazario Moreno
+author: Miguel Moreno
 baseurl: "/random-stuff"
 url: "https://miguelnazmor.github.io"
 
@@ -22,4 +22,4 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Miguel Nazario Moreno"
+      author: "Miguel Moreno"
