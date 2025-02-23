@@ -1,0 +1,23 @@
+<div class="language-switcher">
+  {% for lang in site.languages %}
+    {% if lang == site.default_lang %}
+      {% assign lang_name = lang %}
+    {% else %}
+      {% assign lang_name = lang %}
+    {% endif %}
+    
+    {% if lang == site.lang %}
+      <span class="active">{% t global.{{lang_name}} %}</span>
+    {% else %}
+      {% if lang == site.default_lang %}
+        <a href="{{ site.baseurl }}{{ page.url }}">{% t global.{{lang_name}} %}</a>
+      {% else %}
+        <a href="{{ site.baseurl }}/{{ lang }}{{ page.url }}">{% t global.{{lang_name}} %}</a>
+      {% endif %}
+    {% endif %}
+    
+    {% if forloop.last == false %}
+      <span class="separator">|</span>
+    {% endif %}
+  {% endfor %}
+</div>

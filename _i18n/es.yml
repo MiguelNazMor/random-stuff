@@ -1,0 +1,10 @@
+global:
+  english: Inglés
+  spanish: Español
+  tagline: Un blog sobre tecnología, viajes, cocina, desarrollo de software y más
+  description: Bienvenido a mi blog donde comparto mis experiencias y conocimientos
+  latest_posts: Últimas Publicaciones
+nav:
+  home: Inicio
+  about: Acerca de
+  categories: Categorías

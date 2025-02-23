@@ -1,18 +1,12 @@
 ---
 layout: home
-title: Welcome to Random Stuff
 ---
 
-# Welcome to Random Stuff
+# {% t global.description %}
 
-Here you'll find my thoughts, experiences, and tutorials on various topics including:
+{% t global.tagline %}
 
-- Technology trends and insights
-- Travel adventures and tips
-- Cooking recipes and techniques
-- Software development tutorials and best practices
-
-## Latest Posts
+## {% t global.latest_posts %}
 
 {% for post in site.posts limit:5 %}
 * [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date: "%B %d, %Y" }}
