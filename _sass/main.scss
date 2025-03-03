@@ -1,0 +1,75 @@
+// Variables
+$font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$primary-color: #2a7ae2;
+$text-color: #111;
+$background-color: #fdfdfd;
+
+// Base styles
+body {
+  font-family: $font-family-sans;
+  color: $text-color;
+  background-color: $background-color;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+// Header
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 1rem 0;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-title {
+    font-size: 1.625rem;
+    font-weight: 300;
+    color: $text-color;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .language-nav {
+    a {
+      color: $text-color;
+      text-decoration: none;
+      padding: 0.5rem;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+      
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Content
+.page-content {
+  padding: 2rem 0;
+}
+
+// Links
+a {
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}

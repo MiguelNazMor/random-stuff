@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.2"
-gem "minima", "~> 2.5"
+
+# Use sass-embedded instead of sass-converter
+gem "sass-embedded", "~> 1.69"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"

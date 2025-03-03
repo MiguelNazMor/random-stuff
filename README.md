@@ -2,21 +2,32 @@
 
 This is the source code for my personal blog where I share posts about technology, travels, cooking, software development, and more.
 
+## Requirements
+
+- Ruby 3.2.2 (managed with RVM)
+- Bundler
+
 ## Local Development
 
 To run this site locally:
 
-1. Install Jekyll and Bundler:
+1. Make sure you have RVM installed and Ruby 3.2.2:
+```bash
+rvm install 3.2.2
+rvm use 3.2.2@random-stuff --create
+```
+
+2. Install Jekyll and Bundler:
 ```bash
 gem install jekyll bundler
 ```
 
-2. Install dependencies:
+3. Install dependencies:
 ```bash
 bundle install
 ```
 
-3. Run the development server:
+4. Run the development server:
 ```bash
 bundle exec jekyll serve
 ```
